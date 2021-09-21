@@ -68,6 +68,7 @@ jobs:
               cd .. && \
               git clone --depth 1 https://github.com/fabioz/PyDev.Debugger.git && \
               ls && \
+              apt-get -y install libstdc++-7-dev-arm64-cross && \
               cd ../PyDev.Debugger/pydevd_attach_to_process/linux_and_mac && \
               ./compile_linux.sh && \
               cp ../PyDev.Debugger/pydevd_attach_to_process/*.so . && \
