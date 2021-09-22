@@ -68,6 +68,10 @@ jobs:
               cd .. && \
               git clone --depth 1 https://github.com/bhumikapaharia/PyDev.Debugger.git && \
               ls && \
+              pwd && \
+              wget https://releases.linaro.org/components/toolchain/binaries/latest-7/aarch64-linux-gnu/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu.tar.xz && \
+              tar -xvf gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu.tar.xz && \
+              export PATH=/home/bhumika/toolchain/gcc-linaro-7.5.0-2019.12-x86_64_aarch64-linux-gnu//bin:$PATH
               cd ../PyDev.Debugger/pydevd_attach_to_process/linux_and_mac && \
               ./compile_linux.sh && \
               cp ../PyDev.Debugger/pydevd_attach_to_process/*.so . && \
