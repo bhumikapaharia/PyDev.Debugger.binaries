@@ -76,4 +76,5 @@ jobs:
               ./compile_linux.sh && \
               cp ../PyDev.Debugger/pydevd_attach_to_process/*.so . && \
               ls -la && \
+              
               deactivate'
