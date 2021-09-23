@@ -81,10 +81,7 @@ jobs:
               cd .. && \
               pwd && \
               ls && \
-
+              cp ../PyDev.Debugger/pydevd_attach_to_process/attach_linux_aarch64.so . &&  ls -la && \
               
               
               deactivate'
-
-#cp ../PyDev.Debugger/pydevd_attach_to_process/*.so . && \
-#              ls -la && \
