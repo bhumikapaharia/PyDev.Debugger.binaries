@@ -31,6 +31,8 @@ jobs:
       run: |
         cd ../PyDev.Debugger/pydevd_attach_to_process/linux_and_mac
         ./compile_linux.sh
+        pwd
+        ls
         
     - name: Copy files to upload
       shell: bash
@@ -76,9 +78,13 @@ jobs:
               ./compile_linux.sh && \
               pwd && \
               ls && \
-              ls ../PyDev.Debugger/ && \
-              ls ../PyDev.Debugger/pydevd_attach_to_process/ && \
-              cp ../PyDev.Debugger/pydevd_attach_to_process/*.so . && \
-              ls -la && \
+              cd .. && \
+              pwd && \
+              ls && \
+
+              
               
               deactivate'
+
+#cp ../PyDev.Debugger/pydevd_attach_to_process/*.so . && \
+#              ls -la && \
