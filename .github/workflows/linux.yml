@@ -78,9 +78,6 @@ jobs:
               ./compile_linux.sh && \
               pwd && \
               ls && \
-              cd .. && \
-              pwd && \
-              ls && \
               cp ../PyDev.Debugger/pydevd_attach_to_process/attach_linux_aarch64.so . &&  ls -la && \
               
               
