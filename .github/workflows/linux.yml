@@ -78,7 +78,7 @@ jobs:
               ./compile_linux.sh && \
               pwd && \
               ls && \
-              cp ../PyDev.Debugger/pydevd_attach_to_process/attach_linux_aarch64.so . &&  ls -la && \
+              cp ../attach_linux_aarch64.so . &&  ls -la && \
               
               
               deactivate'
